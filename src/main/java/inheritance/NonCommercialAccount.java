@@ -7,7 +7,4 @@ public class NonCommercialAccount extends Account{
         super(accountNum, customer, balance);
     }
 
-    public NonCommercialAccount(String s, Customer c1) {
-        super(s, c1);
-    }
 }

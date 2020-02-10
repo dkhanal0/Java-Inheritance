@@ -18,7 +18,7 @@ public  abstract class Product {
         return productName;
     }
 // getIsbn() - Returns a String representing the ISBN (barcode) number
-    public String getISBNNum(){
+    public String getIsbn(){
         return ISBNNum;
     }
 
@@ -28,6 +28,6 @@ public  abstract class Product {
         return unitPrice;
     }
 
-    public abstract String getIsbn();
+
 
 }

@@ -92,7 +92,7 @@ class Tests {
   Customer c1 = new Customer("Early", "James", "123 Main St", "13126");
 
   // Create an account
-  Account a1 = new NonCommercialAccount("123-456-78", c1);
+  Account a1 = new NonCommercialAccount("123-456-78", c1, 1.45);
   assertEquals("123-456-78", a1.getAccountNumber());
   assertEquals(c1, a1.getCustomer());
   assertEquals(a1.getBalance(), 0);
@@ -120,8 +120,8 @@ class Tests {
 
 @Test void taxableProductTest(){
   // Instantiate a taxable product
-  String productName1 = null;
-  Product p1 = new TaxableProduct("Snickers", "234-567-89", 0.99, productName1);
+ // String productName1 = null;
+  Product p1 = new TaxableProduct("Snickers", "234-567-89", 0.99);
   assertEquals("Snickers", p1.getProductName());
   assertEquals("234-567-89", p1.getIsbn());
   assertEquals(0.99, p1.getUnitPrice());
@@ -138,7 +138,7 @@ class Tests {
 @Test void orderItemTest(){
   // Instantiate a product
   String productName1 = null;
-  Product p1 = new TaxableProduct("Snickers", "234-567-89", 0.99, productName1);
+  Product p1 = new TaxableProduct("Snickers", "234-567-89", 0.99);
 
   // Instantiate an OrderItem
   OrderItem oi1 = new OrderItem(p1, 2);
@@ -153,13 +153,13 @@ class Tests {
     // Instantiate a customer
     Customer c1 = new Customer("Early", "James", "123 Main St", "13126");
     // Create an account
-    Account a1 = new NonCommercialAccount("123-456-78", c1);
+    Account a1 = new NonCommercialAccount("123-456-78", c1,1.34);
     // Associate with customer
     c1.setAccount(a1);
 
     // Instantiate some products
-    Product p1 = new TaxableProduct("Snickers", "234-567-89", 0.99, productName1);
-    Product p2 = new TaxableProduct("Ear buds", "345-678-90", 10.99, productName1);
+    Product p1 = new TaxableProduct("Snickers", "234-567-89", 0.99);
+    Product p2 = new TaxableProduct("Ear buds", "345-678-90", 10.99);
     Product p3 = new NonTaxableProduct("Socks", "345-678-90", 4.99);
 
 

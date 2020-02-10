@@ -10,9 +10,7 @@ public class NonTaxableProduct extends Product {
 
     }
 
-    @Override
-    public String getIsbn() {
-        return null;
-    }
+
+
 
 }
