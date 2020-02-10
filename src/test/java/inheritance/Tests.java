@@ -10,7 +10,7 @@ import java.lang.reflect.Modifier;
 class Tests {
 
   @Test void inspectAccount() {
-    // Make sure Acount is both public and abstract and the parent class
+    // Make sure Account is both public and abstract and the parent class
     try {
       Class<?> c = Class.forName("inheritance.Account");
       // Inspect modifiers
