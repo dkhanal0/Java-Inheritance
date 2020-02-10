@@ -2,13 +2,13 @@ package inheritance;
 
 public class OrderItem {
 
-private String product;
+private Product product;
 private int quantity;
 private Product p1;
 
 
     // A constructor that initializes the product and quantity
-    public OrderItem(String product, int quantity){
+    public OrderItem(Product product, int quantity){
         this.product=product;
         this.quantity= quantity;
     }

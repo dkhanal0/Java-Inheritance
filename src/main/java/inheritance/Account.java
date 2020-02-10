@@ -12,7 +12,11 @@ public abstract class Account{
         this.balance=0;
     }
 
-  // getAccountNumber() - Returns a String representing the account number.
+    public Account(String s, Customer c1) {
+
+    }
+
+    // getAccountNumber() - Returns a String representing the account number.
     public String getAccountNumber(){
         return accountNum;
     }

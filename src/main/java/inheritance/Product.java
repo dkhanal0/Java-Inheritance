@@ -27,4 +27,7 @@ public  abstract class Product {
     public double getUnitPrice(){
         return unitPrice;
     }
+
+    public abstract String getIsbn();
+
 }

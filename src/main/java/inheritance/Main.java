@@ -8,6 +8,12 @@ public class Main {
   public static void main(String[] args) {
       // Use this method to test your code
 
+    Customer c1 = new Customer("Early", "James", "123 Main St", "13126");
+    System.out.println(c1.getZipCode());
+
+    NonCommercialAccount a1= new NonCommercialAccount("123-345", c1, 5.55);
+    System.out.println(a1.getBalance());
+
 
 
   }
