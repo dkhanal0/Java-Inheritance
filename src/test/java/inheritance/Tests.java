@@ -148,7 +148,7 @@ class Tests {
 }
 
 
-  @Test void orderTest(String productName1){
+  @Test void orderTest(){
     // Instantiate a customer
     Customer c1 = new Customer("Early", "James", "123 Main St", "13126");
     // Create an account

@@ -11,7 +11,7 @@ public class Order  {
     public Order(Account a1) {
 
         this.a = a1;
-        //this.items = new ArrayList<OrderItem>();
+        this.items = new ArrayList<>();
 
     }
 
