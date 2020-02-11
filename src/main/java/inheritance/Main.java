@@ -14,6 +14,8 @@ public class Main {
     NonCommercialAccount a1= new NonCommercialAccount("123-345", c1, 5.55);
     System.out.println(a1.getBalance());
 
+    Product p1 = new TaxableProduct("Snickers", "234-567-89", 0.99);
+    System.out.println(p1.getProductName());
 
 
   }

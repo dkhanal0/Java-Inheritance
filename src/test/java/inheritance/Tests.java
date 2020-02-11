@@ -111,7 +111,7 @@ class Tests {
   assertEquals("123-456-78", a1.getAccountNumber());
   assertEquals(c1, a1.getCustomer());
   assertEquals(a1.getBalance(), 0);
-  assertEquals(a1.getTaxId(), "NY-12345");
+  assertEquals(a1.getTaxId(), "123-56");
 
   // Associate account with customer
   c1.setAccount(a1);

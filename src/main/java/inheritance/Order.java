@@ -2,7 +2,7 @@ package inheritance;
 
 import java.util.ArrayList;
 
-public class Order {
+public class Order  {
     private Account a;
 
     public ArrayList<OrderItem> items;
@@ -11,7 +11,7 @@ public class Order {
     public Order(Account a1) {
 
         this.a = a1;
-        this.items = new ArrayList<OrderItem>();
+        //this.items = new ArrayList<OrderItem>();
 
     }
 

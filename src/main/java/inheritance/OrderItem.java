@@ -2,14 +2,14 @@ package inheritance;
 
 public class OrderItem {
 
-private Product product;
+
 private int quantity;
 private Product p1;
 
 
     // A constructor that initializes the product and quantity
-    public OrderItem(Product product, int quantity){
-        this.product=product;
+    public OrderItem(Product p1, int quantity){
+        this.p1=p1;
         this.quantity= quantity;
     }
 
@@ -25,7 +25,6 @@ private Product p1;
 
   // getPrice() - Returns the price of this item, based on the unit price of the product and the quantity
     public double getPrice(){
-  double price= p1.getUnitPrice()*quantity;
-        return price;
+        return p1.getUnitPrice()*quantity;
         }
 }
