@@ -107,7 +107,7 @@ class Tests {
   Customer c1 = new Customer("Early", "James", "123 Main St", "13126");
 
   // Create an account
-  CommercialAccount a1 = new CommercialAccount("123-456-78", c1, 12345, "ad");
+  CommercialAccount a1 = new CommercialAccount("123-456-78", c1, 12345, "123-56");
   assertEquals("123-456-78", a1.getAccountNumber());
   assertEquals(c1, a1.getCustomer());
   assertEquals(a1.getBalance(), 0);
@@ -120,7 +120,7 @@ class Tests {
 
 @Test void taxableProductTest(){
   // Instantiate a taxable product
- // String productName1 = null;
+
   Product p1 = new TaxableProduct("Snickers", "234-567-89", 0.99);
   assertEquals("Snickers", p1.getProductName());
   assertEquals("234-567-89", p1.getIsbn());
@@ -137,7 +137,6 @@ class Tests {
 
 @Test void orderItemTest(){
   // Instantiate a product
-  String productName1 = null;
   Product p1 = new TaxableProduct("Snickers", "234-567-89", 0.99);
 
   // Instantiate an OrderItem
